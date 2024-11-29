@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "ostream": "cpp",
+    "terminal.integrated.encoding": "utf-8"
+  },
+  "terminal.explorerKind": "integrated",
+  // "code-runner.executorMap": {
+  //   "cpp": "cd $dir && g++ $fileName -o D:/VScode/VScode Programs/C++/$fileDirname/bin && D:/VScode/VScode Programs/C++/$fileDirname/bin"
+  // }
+}

@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++.exe 生成活动文件",
+      "command": "D:/MinGW/mingw64-14.2.0/bin/g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        // "${file}",
+        "${fileDirname}/*.cpp", // 指定要编译的文件为文件夹下的所有.cpp文件
+        "-o",
+        "${fileDirname}/bin/${fileBasenameNoExtension}.exe" // 单文件输出文件路径：一个源程序文件一个.exe输出文件
+        // "${fileDirname}/bin/main.exe" // 多文件输出文件路径：一个文件夹中的多个源程序编译输出成一个.exe输出文件
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "调试器生成的任务。"
+    }
+  ],
+  "version": "2.0.0"
+}
